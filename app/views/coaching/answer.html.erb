@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="coaching.scss">
+  <title>Stupid Coaching</title>
+</head>
+<body>
+  <div class="conversation">
+  <div class="message" id="question">
+  <h1> <%= @question %> </h1>
+    <p>- You</p>
+  </div>
+  <div class=message>
+    <h1> <%= @answer %> </h1>
+    <p>- Your coach</p>
+  </div>
+</div>
+<%= link_to "Ask a new question", ask_path %>
+</body>
+</html>
+
+
+<!-- <form action="/coaching" method="get">
+  <input type="text" name="questions" placeholder="You">
+  <input type="text" name="answers" placeholder="Your coach">
+  <input type="submit">
+</form> -->
+
